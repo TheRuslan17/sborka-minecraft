@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minecraft Modpack — Forge 1.20.1</title>
-    <meta name="description" content="Сборка модов для Minecraft 1.20.1 на Forge. 96 модов, 8+ GB RAM, версия 47.4.10" />
+    <title>СукаИдиНахуйДалбаёб — Forge 1.20.1</title>
+    <meta name="description" content="Мод-пак СукаИдиНахуйДалбаёб для Minecraft 1.20.1 на Forge. 109 модов, 8+ GB RAM, версия 47.4.10" />
     <meta name="theme-color" content="#0a0a0a" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>" />
 
@@ -33,7 +33,6 @@
             --radius: 6px;
             --shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
             --transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            --transition-slow: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         html {
@@ -54,9 +53,8 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* ===== CONTAINER ===== */
         .container {
-            max-width: 820px;
+            max-width: 860px;
             width: 100%;
             background: var(--bg-card);
             border-radius: var(--radius);
@@ -75,15 +73,6 @@
             }
         }
 
-        /* ===== HEADER ===== */
-        header {
-            text-align: center;
-            margin-bottom: 32px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid var(--border);
-            animation: fadeUp 0.8s ease 0.1s both;
-        }
-
         @keyframes fadeUp {
             from {
                 opacity: 0;
@@ -95,13 +84,20 @@
             }
         }
 
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+            animation: fadeUp 0.8s ease 0.1s both;
+        }
+
         .logo {
             font-size: 2.8rem;
             display: block;
             margin-bottom: 2px;
             transition: var(--transition);
         }
-
         .logo:hover {
             transform: scale(1.04) rotate(-2deg);
         }
@@ -112,12 +108,10 @@
             letter-spacing: -0.4px;
             color: var(--text);
         }
-
         h1 span {
             color: var(--accent);
             transition: var(--transition);
         }
-
         h1:hover span {
             color: var(--accent-hover);
         }
@@ -130,7 +124,6 @@
             letter-spacing: 0.2px;
         }
 
-        /* ===== BADGE ROW ===== */
         .badge-row {
             display: flex;
             justify-content: center;
@@ -156,7 +149,6 @@
             transition: var(--transition);
             cursor: default;
         }
-
         .badge:hover {
             background: rgba(255, 255, 255, 0.06);
             border-color: var(--border-light);
@@ -171,7 +163,6 @@
             background: #3a9b5e;
             animation: dotPulse 2s ease-in-out infinite;
         }
-
         @keyframes dotPulse {
             0%,
             100% {
@@ -182,11 +173,6 @@
             }
         }
 
-        .badge .icon {
-            font-size: 0.8rem;
-        }
-
-        /* ===== CARD ===== */
         .card {
             background: rgba(255, 255, 255, 0.02);
             border-radius: var(--radius);
@@ -196,12 +182,10 @@
             transition: var(--transition);
             animation: fadeUp 0.8s ease 0.3s both;
         }
-
         .card:hover {
             border-color: var(--border-light);
         }
 
-        /* ===== VERSION ROW ===== */
         .version-row {
             display: flex;
             align-items: center;
@@ -217,7 +201,6 @@
             font-size: 0.9rem;
             color: var(--text-muted);
         }
-
         .version-tag strong {
             color: var(--text);
             font-weight: 600;
@@ -228,7 +211,6 @@
             margin-left: 6px;
             transition: var(--transition);
         }
-
         .version-tag strong:hover {
             background: rgba(255, 255, 255, 0.08);
         }
@@ -237,12 +219,10 @@
             font-size: 0.8rem;
             color: var(--text-muted);
         }
-
         .update-date span {
             color: var(--text);
         }
 
-        /* ===== INFO GRID ===== */
         .info-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -260,7 +240,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .info-item::after {
             content: '';
             position: absolute;
@@ -273,11 +252,9 @@
             transform-origin: left;
             transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
-
         .info-item:hover::after {
             transform: scaleX(1);
         }
-
         .info-item:hover {
             background: rgba(255, 255, 255, 0.04);
             border-color: var(--border-light);
@@ -293,19 +270,16 @@
             margin-bottom: 2px;
             font-weight: 500;
         }
-
         .info-item .value {
             display: block;
             font-size: 1rem;
             font-weight: 500;
             color: var(--text);
         }
-
         .info-item .value.accent {
             color: var(--accent);
         }
 
-        /* ===== DOWNLOAD BUTTON ===== */
         .download-wrap {
             position: relative;
         }
@@ -337,7 +311,6 @@
             transform: scale(0);
             animation: rippleAnim 0.6s ease-out forwards;
         }
-
         @keyframes rippleAnim {
             to {
                 transform: scale(4);
@@ -353,36 +326,29 @@
             transform: translateX(-100%);
             transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
-
         .download-btn:hover:not(:disabled)::before {
             transform: translateX(100%);
         }
-
         .download-btn:hover:not(:disabled) {
             background: var(--accent-hover);
             transform: translateY(-2px);
             box-shadow: 0 8px 32px rgba(212, 160, 48, 0.25);
         }
-
         .download-btn:active:not(:disabled) {
             transform: scale(0.97);
         }
-
         .download-btn:disabled {
             opacity: 0.5;
             cursor: not-allowed;
             transform: none !important;
         }
-
         .download-btn .icon {
             font-size: 1.2rem;
             transition: var(--transition);
         }
-
         .download-btn:hover:not(:disabled) .icon {
             transform: translateY(2px);
         }
-
         .download-btn .size-hint {
             font-weight: 400;
             font-size: 0.7rem;
@@ -390,19 +356,11 @@
             margin-left: 4px;
         }
 
-        .download-btn .btn-text {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        /* ===== PROGRESS ===== */
         .progress-wrap {
             margin-top: 16px;
             display: none;
             animation: fadeUp 0.4s ease both;
         }
-
         .progress-wrap.visible {
             display: block;
         }
@@ -413,7 +371,6 @@
             border-radius: 2px;
             overflow: hidden;
         }
-
         .progress-bar .fill {
             height: 100%;
             width: 0%;
@@ -429,13 +386,11 @@
             color: var(--text-muted);
             margin-top: 6px;
         }
-
         .progress-label .percent {
             color: var(--text);
             font-weight: 500;
         }
 
-        /* ===== INSTRUCTIONS ===== */
         .instructions {
             background: rgba(255, 255, 255, 0.02);
             border-radius: var(--radius);
@@ -445,7 +400,6 @@
             transition: var(--transition);
             animation: fadeUp 0.8s ease 0.4s both;
         }
-
         .instructions:hover {
             border-color: var(--border-light);
         }
@@ -466,7 +420,6 @@
             flex-direction: column;
             gap: 8px;
         }
-
         .instructions ol li {
             counter-increment: step;
             padding-left: 30px;
@@ -475,11 +428,9 @@
             font-size: 0.88rem;
             transition: var(--transition);
         }
-
         .instructions ol li:hover {
             color: var(--text);
         }
-
         .instructions ol li::before {
             content: counter(step);
             position: absolute;
@@ -498,17 +449,14 @@
             color: var(--text-dim);
             transition: var(--transition);
         }
-
         .instructions ol li:hover::before {
             border-color: var(--accent);
             color: var(--accent);
             background: var(--accent-dim);
         }
-
         .instructions ol li strong {
             color: var(--text);
         }
-
         .instructions ol li code {
             background: rgba(255, 255, 255, 0.04);
             padding: 1px 10px;
@@ -518,12 +466,10 @@
             font-family: 'SF Mono', 'Consolas', monospace;
             transition: var(--transition);
         }
-
         .instructions ol li code:hover {
             background: rgba(255, 255, 255, 0.08);
         }
 
-        /* ===== SCREENSHOTS ===== */
         .screenshots {
             margin-top: 24px;
             padding-top: 20px;
@@ -537,7 +483,6 @@
             justify-content: space-between;
             margin-bottom: 14px;
         }
-
         .screenshots h3 {
             font-size: 0.8rem;
             font-weight: 600;
@@ -545,7 +490,6 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-
         .screenshots .count {
             font-size: 0.7rem;
             color: var(--text-dim);
@@ -566,7 +510,6 @@
             cursor: pointer;
             position: relative;
         }
-
         .screenshot-item:hover {
             border-color: var(--accent);
             background: rgba(255, 255, 255, 0.04);
@@ -580,7 +523,6 @@
             background: rgba(255, 255, 255, 0.02);
             position: relative;
         }
-
         .screenshot-item .img-wrap img {
             width: 100%;
             height: 100%;
@@ -588,11 +530,9 @@
             display: block;
             transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
-
         .screenshot-item:hover .img-wrap img {
             transform: scale(1.04);
         }
-
         .screenshot-item .img-wrap .placeholder {
             position: absolute;
             inset: 0;
@@ -606,26 +546,14 @@
             padding: 16px;
             text-align: center;
         }
-
         .screenshot-item .img-wrap .placeholder .icon {
             font-size: 2rem;
             opacity: 0.3;
             transition: var(--transition);
         }
-
         .screenshot-item:hover .img-wrap .placeholder .icon {
             opacity: 0.5;
             transform: scale(1.05);
-        }
-
-        .screenshot-item .img-wrap .placeholder .label {
-            font-weight: 500;
-            color: var(--text);
-        }
-
-        .screenshot-item .img-wrap .placeholder .desc {
-            font-size: 0.65rem;
-            opacity: 0.4;
         }
 
         .screenshot-item .caption {
@@ -638,7 +566,6 @@
             letter-spacing: 0.2px;
             transition: var(--transition);
         }
-
         .screenshot-item:hover .caption {
             color: var(--text);
         }
@@ -657,7 +584,6 @@
             letter-spacing: 0.4px;
             animation: badgePulse 2s ease-in-out infinite;
         }
-
         @keyframes badgePulse {
             0%,
             100% {
@@ -668,7 +594,6 @@
             }
         }
 
-        /* ===== LIGHTBOX ===== */
         .lightbox {
             display: none;
             position: fixed;
@@ -684,13 +609,11 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-
         .lightbox.visible {
             display: flex;
             opacity: 1;
             animation: lightboxIn 0.3s ease forwards;
         }
-
         @keyframes lightboxIn {
             from {
                 opacity: 0;
@@ -710,7 +633,6 @@
             box-shadow: 0 16px 64px rgba(0, 0, 0, 0.8);
             animation: zoomIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
-
         @keyframes zoomIn {
             from {
                 opacity: 0;
@@ -739,7 +661,6 @@
             justify-content: center;
             border-radius: 4px;
         }
-
         .lightbox .close-btn:hover {
             background: rgba(255, 255, 255, 0.08);
             color: var(--text);
@@ -773,12 +694,10 @@
             justify-content: center;
             border-radius: 4px;
         }
-
         .lightbox .nav-btn:hover {
             background: rgba(255, 255, 255, 0.08);
             color: var(--text);
         }
-
         .lightbox .nav-btn.prev {
             left: 20px;
         }
@@ -786,13 +705,101 @@
             right: 20px;
         }
 
-        /* ===== FOOTER ===== */
+        /* ===== MOD LIST ===== */
+        .mod-list {
+            margin-top: 28px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            animation: fadeUp 0.8s ease 0.6s both;
+        }
+
+        .mod-list h3 {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+
+        .mod-category {
+            margin-bottom: 20px;
+        }
+
+        .mod-category .cat-title {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .mod-category .cat-title .count {
+            font-size: 0.6rem;
+            font-weight: 400;
+            color: var(--text-dim);
+            text-transform: none;
+        }
+
+        .mod-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px 20px;
+        }
+
+        .mod-item {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            padding: 3px 0;
+            padding-left: 14px;
+            position: relative;
+            transition: var(--transition);
+            line-height: 1.4;
+        }
+        .mod-item::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--text-dim);
+            font-size: 0.6rem;
+        }
+        .mod-item:hover {
+            color: var(--text);
+        }
+        .mod-item .mod-desc {
+            font-size: 0.62rem;
+            color: var(--text-dim);
+            display: block;
+            padding-left: 4px;
+        }
+        .mod-item:hover .mod-desc {
+            color: var(--text-muted);
+        }
+
+        .mod-count-total {
+            text-align: right;
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid var(--border);
+        }
+        .mod-count-total strong {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
         footer {
             text-align: center;
             margin-top: 28px;
             padding-top: 20px;
             border-top: 1px solid var(--border);
-            animation: fadeUp 0.8s ease 0.6s both;
+            animation: fadeUp 0.8s ease 0.7s both;
         }
 
         footer p {
@@ -800,17 +807,14 @@
             font-size: 0.75rem;
             transition: var(--transition);
         }
-
         footer p:hover {
             color: var(--text-muted);
         }
-
         footer .heart {
             color: #4a2a2a;
             transition: var(--transition);
             display: inline-block;
         }
-
         footer p:hover .heart {
             color: #7a3a3a;
             transform: scale(1.1);
@@ -825,59 +829,47 @@
             opacity: 0.3;
             transition: var(--transition);
         }
-
         .protection:hover {
             opacity: 0.6;
         }
 
-        /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .container {
                 padding: 24px 18px;
             }
-
             h1 {
                 font-size: 1.5rem;
             }
-
             .logo {
                 font-size: 2.2rem;
             }
-
             .card {
                 padding: 20px 16px;
             }
-
             .info-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 6px;
             }
-
             .download-btn {
                 font-size: 0.9rem;
                 padding: 14px 18px;
             }
-
-            .badge-row {
-                gap: 6px;
-            }
-
             .badge {
                 font-size: 0.6rem;
                 padding: 4px 12px;
             }
-
             .version-row {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 6px;
             }
-
             .screenshots-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 10px;
             }
-
+            .mod-grid {
+                grid-template-columns: 1fr;
+            }
             .lightbox .nav-btn {
                 width: 36px;
                 height: 36px;
@@ -895,50 +887,42 @@
             .container {
                 padding: 16px 12px;
             }
-
             h1 {
                 font-size: 1.2rem;
             }
-
             .logo {
                 font-size: 1.8rem;
             }
-
             .card {
                 padding: 16px 12px;
             }
-
             .info-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 4px;
             }
-
             .info-item {
                 padding: 10px 8px;
             }
-
             .info-item .value {
                 font-size: 0.85rem;
             }
-
             .instructions ol li {
                 font-size: 0.8rem;
                 padding-left: 26px;
             }
-
             .screenshots-grid {
                 grid-template-columns: 1fr;
             }
-
+            .mod-grid {
+                grid-template-columns: 1fr;
+            }
             .lightbox {
                 padding: 16px;
             }
-
             .lightbox img {
                 max-width: 98%;
                 max-height: 75%;
             }
-
             .lightbox .close-btn {
                 top: 12px;
                 right: 12px;
@@ -946,7 +930,6 @@
                 height: 34px;
                 font-size: 1rem;
             }
-
             .lightbox .nav-btn {
                 width: 30px;
                 height: 30px;
@@ -972,20 +955,19 @@
         <span class="counter" id="lightboxCounter">1 / 1</span>
     </div>
 
-    <!-- ===== ОСНОВНОЙ КОНТЕЙНЕР ===== -->
     <div class="container">
 
         <!-- HEADER -->
         <header>
             <span class="logo">⛏️</span>
-            <h1>Minecraft <span>Modpack</span></h1>
-            <p class="subtitle">Сборка для Forge 1.20.1</p>
+            <h1>СукаИдиНахуй<span>Далбаёб</span></h1>
+            <p class="subtitle">Мод-пак для Forge 1.20.1</p>
         </header>
 
         <!-- BADGE -->
         <div class="badge-row">
             <span class="badge"><span class="dot"></span> Актуально</span>
-            <span class="badge"><span class="icon">📦</span> 96 модов</span>
+            <span class="badge"><span class="icon">📦</span> 109 модов</span>
             <span class="badge"><span class="icon">⚡</span> Forge 47.4.10</span>
             <span class="badge"><span class="icon">🎯</span> 1.20.1</span>
         </div>
@@ -993,7 +975,6 @@
         <!-- CARD -->
         <div class="card">
 
-            <!-- VERSION -->
             <div class="version-row">
                 <span class="version-tag">
                     Версия <strong id="version">v1.0.0</strong>
@@ -1003,7 +984,6 @@
                 </span>
             </div>
 
-            <!-- INFO GRID -->
             <div class="info-grid">
                 <div class="info-item">
                     <span class="label">Размер</span>
@@ -1019,18 +999,16 @@
                 </div>
             </div>
 
-            <!-- DOWNLOAD -->
             <div class="download-wrap">
                 <button id="downloadBtn" class="download-btn">
                     <span class="icon">⬇</span>
                     <span class="btn-text">
-                        Скачать сборку
+                        Скачать мод-пак
                         <span class="size-hint" id="sizeHint"></span>
                     </span>
                 </button>
             </div>
 
-            <!-- PROGRESS -->
             <div class="progress-wrap" id="progressWrap">
                 <div class="progress-bar">
                     <div class="fill" id="progressFill"></div>
@@ -1046,9 +1024,9 @@
         <div class="instructions">
             <h3>Установка</h3>
             <ol>
-                <li>Скачайте ZIP-архив с модами</li>
+                <li>Скачайте ZIP-архив с мод-паком</li>
                 <li>Установите <strong>Forge 47.4.10</strong> для Minecraft <strong>1.20.1</strong></li>
-                <li>Распакуйте архив в папку <code>mods</code></li>
+                <li>Распакуйте архив в <strong>папку с мод-паком</strong></li>
                 <li>Выделите <strong>минимум 6 GB</strong> RAM в настройках лаунчера</li>
                 <li>Запустите Minecraft и играйте 🎮</li>
             </ol>
@@ -1062,67 +1040,263 @@
             </div>
             <div class="screenshots-grid" id="screenshotsGrid">
 
-                <!-- Шаг 1 -->
-                <div class="screenshot-item" onclick="openLightbox('screenshots/step1_download.jpg')">
+                <div class="screenshot-item" onclick="openLightbox('photo1.jpg')">
                     <div class="img-wrap">
-                        <div class="placeholder">
-                            <span class="icon">📥</span>
-                            <span class="label">Шаг 1</span>
-                            <span class="desc">Скачивание</span>
-                        </div>
-                        <!--
-                        <img src="screenshots/step1_download.jpg" alt="Скачивание" />
-                        -->
+                        <img src="photo1.jpg" alt="Главный экран" />
+                        <span class="badge-new">Новое</span>
                     </div>
-                    <div class="caption">Шаг 1: Скачайте архив</div>
+                    <div class="caption">📱 Шаг 1: Главный экран мод-пака</div>
                 </div>
 
-                <!-- Шаг 2: TLauncher -->
                 <div class="screenshot-item" onclick="openLightbox('photo2.jpg')">
                     <div class="img-wrap">
                         <img src="photo2.jpg" alt="TLauncher" />
-                        <span class="badge-new">Новое</span>
                     </div>
-                    <div class="caption">Шаг 2: Загрузка версии в TLauncher</div>
+                    <div class="caption">🔄 Шаг 2: Загрузка версии в TLauncher</div>
                 </div>
 
-                <!-- Шаг 3: Папка mods -->
                 <div class="screenshot-item" onclick="openLightbox('photo3.jpg')">
                     <div class="img-wrap">
-                        <img src="photo3.jpg" alt="Папка mods" />
+                        <img src="photo3.jpg" alt="Папка мод-пака" />
                     </div>
-                    <div class="caption">Шаг 3: Распакуйте в папку mods</div>
+                    <div class="caption">📂 Шаг 3: Распакуйте в папку с мод-паком</div>
                 </div>
 
-                <!-- Шаг 4: RAM -->
                 <div class="screenshot-item" onclick="openLightbox('photo4.jpg')">
                     <div class="img-wrap">
                         <img src="photo4.jpg" alt="RAM" />
                     </div>
-                    <div class="caption">Шаг 4: Настройка RAM (6-8 GB)</div>
+                    <div class="caption">💾 Шаг 4: Настройка RAM (6-8 GB)</div>
                 </div>
 
-                <!-- Шаг 5: Результат -->
                 <div class="screenshot-item" onclick="openLightbox('photo5.jpg')">
                     <div class="img-wrap">
                         <img src="photo5.jpg" alt="Результат" />
                     </div>
-                    <div class="caption">Шаг 5: Результат — игра готова</div>
+                    <div class="caption">🎮 Шаг 5: Результат — игра готова</div>
                 </div>
 
+            </div>
+        </div>
+
+        <!-- ===== MOD LIST ===== -->
+        <div class="mod-list">
+            <h3>📦 Список модов (109)</h3>
+
+            <!-- 🧩 Ядра, API и Библиотеки -->
+            <div class="mod-category">
+                <div class="cat-title">🧩 Ядра, API и Библиотеки <span class="count">(23)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Architectury <span class="mod-desc">— кросс-платформенная библиотека</span></div>
+                    <div class="mod-item">Caelus <span class="mod-desc">— двойной прыжок и полёт (элитры)</span></div>
+                    <div class="mod-item">Citadel <span class="mod-desc">— библиотека для модов от Alex's Mobs</span></div>
+                    <div class="mod-item">Cloth Config <span class="mod-desc">— настройка конфигов через экран</span></div>
+                    <div class="mod-item">Collective <span class="mod-desc">— общие утилиты для многих модов</span></div>
+                    <div class="mod-item">CreativeCore <span class="mod-desc">— ядро для рендеринга и интерфейсов</span></div>
+                    <div class="mod-item">Curios <span class="mod-desc">— аксессуары (кольца, амулеты)</span></div>
+                    <div class="mod-item">Framework <span class="mod-desc">— основа для модов с настройками</span></div>
+                    <div class="mod-item">Fzzy Config <span class="mod-desc">— удобное конфигурирование</span></div>
+                    <div class="mod-item">Geckolib <span class="mod-desc">— анимация 3D-моделей существ</span></div>
+                    <div class="mod-item">Iceberg <span class="mod-desc">— кастомизация интерфейсов и тултипов</span></div>
+                    <div class="mod-item">Kotlin for Forge <span class="mod-desc">— поддержка модов на Kotlin</span></div>
+                    <div class="mod-item">Lionfish API <span class="mod-desc">— работа с анимациями существ</span></div>
+                    <div class="mod-item">Moonlight <span class="mod-desc">— библиотека для Supplementaries</span></div>
+                    <div class="mod-item">OctoLib <span class="mod-desc">— оружие и визуальные эффекты</span></div>
+                    <div class="mod-item">Patchouli <span class="mod-desc">— внутриигровые книги-руководства</span></div>
+                    <div class="mod-item">Placebo <span class="mod-desc">— расширяет возможности Forge</span></div>
+                    <div class="mod-item">Player Animation Lib <span class="mod-desc">— анимация игрока</span></div>
+                    <div class="mod-item">SmartBrainLib <span class="mod-desc">— улучшенный ИИ для мобов</span></div>
+                    <div class="mod-item">Spartan Toolkit <span class="mod-desc">— библиотека для Spartan Weaponry</span></div>
+                    <div class="mod-item">TerraBlender <span class="mod-desc">— генерация биомов</span></div>
+                    <div class="mod-item">Valhelsia Core <span class="mod-desc">— общая библиотека Valhelsia</span></div>
+                    <div class="mod-item">Yet Another Config Lib <span class="mod-desc">— красивые меню настроек</span></div>
+                </div>
+            </div>
+
+            <!-- ⚙️ Производительность -->
+            <div class="mod-category">
+                <div class="cat-title">⚙️ Производительность и Оптимизация <span class="count">(5)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Embeddium <span class="mod-desc">— форк Sodium, повышает FPS</span></div>
+                    <div class="mod-item">FerriteCore <span class="mod-desc">— оптимизация оперативной памяти</span></div>
+                    <div class="mod-item">ImmediatelyFast <span class="mod-desc">— ускоряет рендеринг</span></div>
+                    <div class="mod-item">Krypton Reforged <span class="mod-desc">— оптимизация сетевого кода</span></div>
+                    <div class="mod-item">ServerCore <span class="mod-desc">— оптимизация серверной части</span></div>
+                </div>
+            </div>
+
+            <!-- 🖥️ Интерфейс -->
+            <div class="mod-category">
+                <div class="cat-title">🖥️ Интерфейс, HUD и Информация <span class="count">(10)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Advancement Plaques <span class="mod-desc">— красивые окна достижений</span></div>
+                    <div class="mod-item">AppleSkin <span class="mod-desc">— точная сытость от еды</span></div>
+                    <div class="mod-item">Balm <span class="mod-desc">— библиотека для интерфейсов</span></div>
+                    <div class="mod-item">Clumps <span class="mod-desc">— сбор опыта в одну кучку</span></div>
+                    <div class="mod-item">Jade <span class="mod-desc">— информация о блоке/мобе</span></div>
+                    <div class="mod-item">JEI <span class="mod-desc">— просмотр рецептов и крафтов</span></div>
+                    <div class="mod-item">Mouse Tweaks <span class="mod-desc">— удобное управление мышкой</span></div>
+                    <div class="mod-item">Simply Tooltips <span class="mod-desc">— подсказки на предметах</span></div>
+                    <div class="mod-item">Xaero's Minimap <span class="mod-desc">— мини-карта с маркерами</span></div>
+                    <div class="mod-item">Xaero's World Map <span class="mod-desc">— полноценная карта мира</span></div>
+                </div>
+            </div>
+
+            <!-- 🎨 Визуал -->
+            <div class="mod-category">
+                <div class="cat-title">🎨 Визуальные улучшения и Звук <span class="count">(6)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Ambient Sounds <span class="mod-desc">— атмосферные звуки в биомах</span></div>
+                    <div class="mod-item">Amendments <span class="mod-desc">— мелкие визуальные улучшения</span></div>
+                    <div class="mod-item">Dynamic Lights <span class="mod-desc">— динамическое освещение</span></div>
+                    <div class="mod-item">Oculus <span class="mod-desc">— поддержка шейдеров (форк Iris)</span></div>
+                    <div class="mod-item">Presence Footsteps <span class="mod-desc">— реалистичные звуки шагов</span></div>
+                    <div class="mod-item">Sound Physics Remastered <span class="mod-desc">— объёмный звук</span></div>
+                </div>
+            </div>
+
+            <!-- 🌍 Генерация мира -->
+            <div class="mod-category">
+                <div class="cat-title">🌍 Генерация мира, Биомы и Структуры <span class="count">(19)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Atmospheric <span class="mod-desc">— новые биомы</span></div>
+                    <div class="mod-item">Blueprint <span class="mod-desc">— библиотека генерации миров</span></div>
+                    <div class="mod-item">Repurposed Structures <span class="mod-desc">— переработанные структуры</span></div>
+                    <div class="mod-item">The Outer End <span class="mod-desc">— новые биомы в Энде</span></div>
+                    <div class="mod-item">Valhelsia Structures <span class="mod-desc">— красивые структуры</span></div>
+                    <div class="mod-item">YUNG's API <span class="mod-desc">— библиотека YUNG</span></div>
+                    <div class="mod-item">YUNG's Better Caves <span class="mod-desc">— улучшенные пещеры</span></div>
+                    <div class="mod-item">YUNG's Better Desert Temples <span class="mod-desc">— храмы пустыни</span></div>
+                    <div class="mod-item">YUNG's Better Dungeons <span class="mod-desc">— данжи и подземелья</span></div>
+                    <div class="mod-item">YUNG's Better End Island <span class="mod-desc">— остров Энда</span></div>
+                    <div class="mod-item">YUNG's Better Jungle Temples <span class="mod-desc">— храмы джунглей</span></div>
+                    <div class="mod-item">YUNG's Better Mineshafts <span class="mod-desc">— шахты</span></div>
+                    <div class="mod-item">YUNG's Better Nether Fortresses <span class="mod-desc">— крепости Незера</span></div>
+                    <div class="mod-item">YUNG's Better Ocean Monuments <span class="mod-desc">— океанские монументы</span></div>
+                    <div class="mod-item">YUNG's Better Strongholds <span class="mod-desc">— крепости с порталами</span></div>
+                    <div class="mod-item">YUNG's Better Witch Huts <span class="mod-desc">— хижины ведьм</span></div>
+                    <div class="mod-item">YUNG's Bridges <span class="mod-desc">— мосты в мире</span></div>
+                    <div class="mod-item">YUNG's Cave Biomes <span class="mod-desc">— подземные биомы</span></div>
+                    <div class="mod-item">YUNG's Extras <span class="mod-desc">— мелкие улучшения структур</span></div>
+                </div>
+            </div>
+
+            <!-- 🧙 Магия -->
+            <div class="mod-category">
+                <div class="cat-title">🧙‍♂️ Магия, Боссы и Приключения <span class="count">(16)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Alex's Mobs <span class="mod-desc">— реалистичные и фантастические мобы</span></div>
+                    <div class="mod-item">Apotheosis <span class="mod-desc">— зачарования, зелья, гемы</span></div>
+                    <div class="mod-item">Apothic Attributes <span class="mod-desc">— новые атрибуты</span></div>
+                    <div class="mod-item">AttributeFix <span class="mod-desc">— убирает лимиты атрибутов</span></div>
+                    <div class="mod-item">Deeper & Darker <span class="mod-desc">— измерение под Deep Dark</span></div>
+                    <div class="mod-item">Dragon Seeker <span class="mod-desc">— поиск драконов</span></div>
+                    <div class="mod-item">Forbidden & Arcanus <span class="mod-desc">— тёмная магия и артефакты</span></div>
+                    <div class="mod-item">Ice and Fire <span class="mod-desc">— драконы и мифические существа</span></div>
+                    <div class="mod-item">L_Enders Cataclysm <span class="mod-desc">— эпические боссы</span></div>
+                    <div class="mod-item">Mana and Artifice <span class="mod-desc">— сложная магия с заклинаниями</span></div>
+                    <div class="mod-item">MNA Attributes <span class="mod-desc">— атрибуты для Mana and Artifice</span></div>
+                    <div class="mod-item">Occultism <span class="mod-desc">— оккультизм и ритуалы</span></div>
+                    <div class="mod-item">Passive Skill Tree <span class="mod-desc">— дерево пассивных навыков</span></div>
+                    <div class="mod-item">Passive Skill Tree Additions <span class="mod-desc">— дополнение к навыкам</span></div>
+                    <div class="mod-item">Relics <span class="mod-desc">— реликвии со способностями</span></div>
+                    <div class="mod-item">Soulslike Weaponry <span class="mod-desc">— оружие в стиле Dark Souls</span></div>
+                </div>
+            </div>
+
+            <!-- ⚔️ Оружие -->
+            <div class="mod-category">
+                <div class="cat-title">⚔️ Оружие, Снаряжение и Инструменты <span class="count">(6)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Artifacts <span class="mod-desc">— аксессуары (кольца, амулеты)</span></div>
+                    <div class="mod-item">Just Enough Guns <span class="mod-desc">— огнестрельное оружие</span></div>
+                    <div class="mod-item">Simply Swords <span class="mod-desc">— новые мечи со спецэффектами</span></div>
+                    <div class="mod-item">Spartan Fire <span class="mod-desc">— огненное оружие</span></div>
+                    <div class="mod-item">Spartan Weaponry <span class="mod-desc">— огромный набор оружия</span></div>
+                    <div class="mod-item">TACZ <span class="mod-desc">— реалистичное оружие</span></div>
+                </div>
+            </div>
+
+            <!-- 🎒 Инвентарь -->
+            <div class="mod-category">
+                <div class="cat-title">🎒 Инвентарь, Хранение и Переноска <span class="count">(5)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Iron Chests <span class="mod-desc">— сундуки с большим объёмом</span></div>
+                    <div class="mod-item">Iron Furnaces <span class="mod-desc">— улучшенные печи</span></div>
+                    <div class="mod-item">Sophisticated Backpacks <span class="mod-desc">— рюкзаки с улучшениями</span></div>
+                    <div class="mod-item">Sophisticated Core <span class="mod-desc">— ядро для Sophisticated</span></div>
+                    <div class="mod-item">Trash Slot <span class="mod-desc">— слот-мусорка в инвентаре</span></div>
+                </div>
+            </div>
+
+            <!-- 🍔 Еда -->
+            <div class="mod-category">
+                <div class="cat-title">🍔 Еда и Кулинария <span class="count">(12)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Farmer's Delight <span class="mod-desc">— основа кулинарии</span></div>
+                    <div class="mod-item">Forbidden & Arcanus Delight <span class="mod-desc">— интеграция еды</span></div>
+                    <div class="mod-item">Occultism Delight <span class="mod-desc">— интеграция еды</span></div>
+                    <div class="mod-item">Rustic Delight <span class="mod-desc">— деревенская кухня</span></div>
+                    <div class="mod-item">Let's Do API <span class="mod-desc">— ядро для серии Let's Do</span></div>
+                    <div class="mod-item">Let's Do Bakery <span class="mod-desc">— выпечка и торты</span></div>
+                    <div class="mod-item">Let's Do Brewery <span class="mod-desc">— варка пива и напитки</span></div>
+                    <div class="mod-item">Let's Do Candlelight <span class="mod-desc">— ресторанная еда</span></div>
+                    <div class="mod-item">Let's Do Farm & Charm <span class="mod-desc">— фермерство и кухня</span></div>
+                    <div class="mod-item">Let's Do Furniture <span class="mod-desc">— мебель для дома</span></div>
+                    <div class="mod-item">Let's Do Vinery <span class="mod-desc">— виноделие и вино</span></div>
+                    <div class="mod-item">Seasonal Lets Do <span class="mod-desc">— сезонные ингредиенты</span></div>
+                </div>
+            </div>
+
+            <!-- 🏠 Декорации -->
+            <div class="mod-category">
+                <div class="cat-title">🏠 Декорации и Окружение <span class="count">(2)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Supplementaries <span class="mod-desc">— декоративные блоки</span></div>
+                    <div class="mod-item">SuppSquared <span class="mod-desc">— дополнение к Supplementaries</span></div>
+                </div>
+            </div>
+
+            <!-- 🧭 Навигация -->
+            <div class="mod-category">
+                <div class="cat-title">🧭 Навигация и Телепортация <span class="count">(1)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Waystones <span class="mod-desc">— камни телепортации</span></div>
+                </div>
+            </div>
+
+            <!-- 📖 Книги -->
+            <div class="mod-category">
+                <div class="cat-title">📖 Книги и Руководства <span class="count">(1)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Modonomicon <span class="mod-desc">— продвинутые книги-руководства</span></div>
+                </div>
+            </div>
+
+            <!-- 🎙️ Социальное -->
+            <div class="mod-category">
+                <div class="cat-title">🎙️ Социальное и Дополнительное <span class="count">(2)</span></div>
+                <div class="mod-grid">
+                    <div class="mod-item">Simple Voice Chat <span class="mod-desc">— голосовой чат в игре</span></div>
+                    <div class="mod-item">TL Skin Cape <span class="mod-desc">— скины и плащи</span></div>
+                </div>
+            </div>
+
+            <div class="mod-count-total">
+                Всего модов: <strong>109</strong>
             </div>
         </div>
 
         <!-- FOOTER -->
         <footer>
             <p>Сделано с <span class="heart">♥</span> для друзей</p>
-            <div class="protection">⚠️ Сборка предназначена только для личного использования</div>
+            <div class="protection">⚠️ Мод-пак предназначен только для личного использования</div>
         </footer>
 
     </div>
 
     <script>
-        // ===== ЭФФЕКТ RIPPLE НА КНОПКЕ =====
+        // ===== RIPPLE =====
         document.querySelector('.download-btn')?.addEventListener('click', function(e) {
             if (this.disabled) return;
             const rect = this.getBoundingClientRect();
@@ -1136,7 +1310,7 @@
             setTimeout(() => ripple.remove(), 600);
         });
 
-        // ===== ЛАЙТБОКС =====
+        // ===== LIGHTBOX =====
         let lightboxImages = [];
         let currentIndex = 0;
 
@@ -1187,10 +1361,7 @@
         document.addEventListener('keydown', function(e) {
             const lightbox = document.getElementById('lightbox');
             if (!lightbox.classList.contains('visible')) return;
-
-            if (e.key === 'Escape') {
-                closeLightbox();
-            } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+            if (e.key === 'Escape') { closeLightbox(); } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
                 e.preventDefault();
                 navigateLightbox(1);
             } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
@@ -1199,7 +1370,7 @@
             }
         });
 
-        // ===== СЧЁТЧИК СКРИНОВ =====
+        // ===== SCREENSHOT COUNT =====
         document.addEventListener('DOMContentLoaded', function() {
             const items = document.querySelectorAll('.screenshot-item img[src]');
             const realImages = items.filter(img => img.src && !img.src.includes('placeholder'));
@@ -1209,7 +1380,7 @@
             }
         });
 
-        // ===== ОСНОВНАЯ ЛОГИКА =====
+        // ===== MAIN LOGIC =====
         document.addEventListener('DOMContentLoaded', function() {
             const downloadBtn = document.getElementById('downloadBtn');
             const progressWrap = document.getElementById('progressWrap');
@@ -1221,9 +1392,8 @@
             const sizeHint = document.getElementById('sizeHint');
             const lastUpdatedDisplay = document.getElementById('last-updated');
 
-            // ===== НАСТРОЙКИ =====
             const FILE_URL = 'modpack.zip';
-            const FILE_NAME = 'minecraft-modpack-1.20.1.zip';
+            const FILE_NAME = 'СукаИдиНахуйДалбаёб-1.20.1.zip';
             const CURRENT_VERSION = 'v1.0.0';
 
             versionDisplay.textContent = CURRENT_VERSION;
@@ -1339,7 +1509,7 @@
                 const currentSize = fileSizeDisplay.textContent;
                 const btnText = downloadBtn.querySelector('.btn-text');
                 btnText.innerHTML =
-                    `Скачать сборку <span class="size-hint" id="sizeHint">${currentSize !== 'Загрузка...' && currentSize !== 'Неизвестно' ? '• ' + currentSize : ''}</span>`;
+                    `Скачать мод-пак <span class="size-hint" id="sizeHint">${currentSize !== 'Загрузка...' && currentSize !== 'Неизвестно' ? '• ' + currentSize : ''}</span>`;
                 progressWrap.classList.remove('visible');
                 progressFill.style.width = '0%';
                 progressPercent.textContent = '0%';
